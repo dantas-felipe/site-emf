@@ -101,6 +101,16 @@ body{
 
 }
 
+.foto:nth-child(5){
+    animation-delay: 20s;
+
+}
+
+.foto:nth-child(6){
+    animation-delay: 25s;
+
+}
+
 .redesocial{
     display: flex;
     justify-content: center;
