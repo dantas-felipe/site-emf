@@ -4,48 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>EMF Moda Infantil</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <!--LINKS e CSS-->
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
 <body>
-
-    <main>
-        <div class="cabecalho">
-            <img src="img/logo-emf.png" alt="" id="logo">
+    <header>
+        <div class="header-top">
+            <div class="contact">
+                <ul>
+                    <li><a href="tel: 81 9 9309-2974"><i class="fa fa-phone"></i> +55 81 9 9309-2974</a></li>
+                    <li><a href="mailto:emf.modainfantil@gmail.com"><i class="fa fa-envelope"></i> emf.modainfantil@gmail.com</a></li>
+                </ul>
+            </div>
         </div>
-
-        <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Quem Somos</a></li>
-            </ul>
-        </div>
-
-    </main>
-
-    <section class="galeria">
-        <img src="produtos/conjunto-polo/Pólo modelo (1).jpg" alt="" class="foto">
-        <img src="produtos/conjunto-polo/Pólo modelo (2).jpg" alt="" class="foto">
-        <img src="produtos/conjunto-polo/Pólo modelo (3).jpg" alt="" class="foto">
-        <img src="produtos/conjunto-polo/Pólo modelo (4).jpg" alt="" class="foto">
-        <img src="produtos/conjunto-polo/Pólo modelo (5).jpg" alt="" class="foto">
-        <img src="produtos/conjunto-polo/Pólo modelo (6).jpg" alt="" class="foto">
-
-    </section>
-
-    
-    <div class="redesocial">
-        <a href="https://www.facebook.com/emf.modainfantil" target="_blank"><img src="img/facebook.png" alt=""></a>
-        <a href="https://www.instagram.com/emf.modainfantil" target="_blank"><img src="img/instagram.png" alt=""></a>
-        <a href="https://wa.me/5581993092974" target="_blank"><img src="img/whatsapp.png" alt=""></a>
-    </div>
+    </header>
 
     <footer>
+        <h1>Formulário de Contato</h1>
+        <form action="https://formsubmit.co/emf.modainfantil@gmail.com" method="POST" class="form">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://dantas-felipe.github.com/site-emf/thanks.html">
+            <button type="submit">Enviar</button>
+        </form>
         &copy EMF Moda Infantil - Todos os direitos reservados.
     </footer>
 
