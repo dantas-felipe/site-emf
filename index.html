@@ -9,6 +9,7 @@
 
     <!--LINKS e CSS-->
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
@@ -16,31 +17,76 @@
 </head>
 
 <body>
-    <header>
+
+    <header class="wrapper">
         <div class="header-top">
-            <div class="contact">
-                <ul>
-                    <li><a href="tel: 81 9 9309-2974"><i class="fa fa-phone"></i> +55 81 9 9309-2974</a></li>
-                    <li><a href="mailto:emf.modainfantil@gmail.com"><i class="fa fa-envelope"></i> emf.modainfantil@gmail.com</a></li>
-                </ul>
+
+            <div class="logo">
+                <img src="./img/logo-emf.png" alt="Logo Emf">
             </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Produtos</a></li>
+                    <li><a href="">Quem Somos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+    
+    <div >
 
-    <footer>
-        <h1>Formulário de Contato</h1>
-        <form action="https://formsubmit.co/emf.modainfantil@gmail.com" method="POST" class="form">
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" required>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required>
-            <label for="message">Mensagem</label>
-            <textarea name="message" id="message" required></textarea>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://dantas-felipe.github.com/site-emf/thanks.html">
-            <button type="submit">Enviar</button>
-        </form>
-        &copy EMF Moda Infantil - Todos os direitos reservados.
+    </div>
+
+   <footer id="footer">
+       <div class="footer-container">
+
+                <section class="quem-somos">
+                    <h2>Quem Somos</h2>
+                    <p>Somos uma empresa de confecção de roupa infantil masculino, com diferencial em qualidade e conforto.</p>
+                </section>
+
+                <section class="social-media">
+                    <h2>Nossas Redes Sociais</h2>
+                    <div class="icons-social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    
+                </section>
+
+                <section class="address">
+                    <h2>Onde Estamos</h2>
+                    <i class="fas fa-map-marker"></i>
+                    <span>Feira da Sulanca, setor da Fundac. Quadra A, Rua 08 - Box 1303</span><br>
+                    <i class="fas fa-phone"></i>
+                    <span>81 9 9309-2974</span>
+                </section>
+
+                <section class="send-mail">
+                    <h2>Formulário de Contato</h2>
+                    <form action="https://formsubmit.co/emf.modainfantil@gmail.com" method="POST" class="form">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" required></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+
+                <div class="footer">
+                    &copy EMF Moda Infantil - Todos os direitos reservados.
+                </div>
+            </div>                
+        </div>
+       
+        
     </footer>
 
     

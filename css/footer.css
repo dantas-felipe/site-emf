@@ -4,28 +4,98 @@
     box-sizing: border-box;
 }
 
-body{
-    background: #0d0e0f;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-right: 1rem;
-    padding-left: 1rem;
+.footer-container{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background: #1a1a1a;
+    grid-template-areas: "quem-somos send-mail"
+                         "social-media send-mail"
+                         "address send-mail"
+                         "footer footer";
 }
 
-h1,h2{
-    font-size: 3rem;
+.quem-somos{
+    grid-area: quem-somos;
+    margin-left: 1rem;
     color: #fff;
-    margin-bottom: 2rem;
+}
+
+.quem-somos h2{
     text-align: center;
-    line-height: 1.2;
+    font-size: 1.5rem;
+    padding-bottom: 0.8rem;
+}
+
+.quem-somos p{
+    font-size: 1.125rem;
+    text-align: justify;
+}
+
+.social-media{
+    grid-area: social-media;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.social-media h2{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 0.8rem;
+}
+
+.fab{
+    color: #fff;
+    padding: 0.4rem;
+    font-size: 1.4rem;
+    border-radius: 50%;
+}
+
+.fa-facebook-f:hover{
+    background: #0072c4;
+}
+
+.fa-instagram:hover{
+    background: #ff247f;
+}
+
+.fa-whatsapp:hover{
+    background: #035214;
+}
+
+.icons-social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.address{
+    grid-area: address;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.address h2{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 0.8rem;
+}
+
+.address p{
+    display: flex;
+    font-size: 1.125rem;
+    justify-content: center;
+}
+
+.send-mail{
+    grid-area: send-mail;
+}
+
+.footer{
+    grid-area: footer;
 }
 
 .form{
-    width: 100%;
-    max-width: 32rem;
     font-size: 1.125rem;
 }
 
@@ -35,6 +105,7 @@ h1,h2{
 .form button{
     display: block;
     width: 100%;
+    color: #fff;
 }
 
 .form input,
@@ -79,4 +150,9 @@ h1,h2{
     outline: none;
     background: #09d;
 }
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
 
